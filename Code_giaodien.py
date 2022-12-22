@@ -79,7 +79,7 @@ def check_img():
  result_check_leaf = int(np.argmax(result, axis=1))
  print("This is:", class_name[result_check_leaf])
  time.sleep(1)#đợi 1 giay in ra kết quả
- solution.configure(text='Result\nThis is: {}'.format(class_name[result_check_leaf]))#in kết quả vào label
+ solution.configure(text='Result\nThis is: {}'.format(class_name[result_check_leaf]))
 button_check=ttk.Button(wd2,text='Check',command=check_img)
 button_check.place_forget()
 #in ra ket qua tren tkinter
